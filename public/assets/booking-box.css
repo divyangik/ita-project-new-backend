@@ -1,0 +1,35 @@
+.bb-open { width: 100%; justify-content: center; margin-bottom: 10px; }
+.bb-lock { overflow: hidden; }
+.bb-dialog { border: 0; padding: 0; border-radius: var(--r-lg); width: min(560px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); background: #fff; color: var(--ink); box-shadow: 0 40px 100px -30px rgba(7, 12, 43, .6); }
+.bb-dialog::backdrop { background: rgba(7, 12, 43, .62); backdrop-filter: blur(4px); }
+.bb-form { padding: 28px 28px 24px; font-family: var(--sans); }
+.bb-form header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; margin-bottom: 18px; }
+.bb-form header small { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.bb-form h3 { font-family: var(--display); font-size: 24px; font-weight: 500; letter-spacing: -.02em; margin-top: 6px; }
+.bb-x { background: none; border: 1px solid var(--line); border-radius: 50%; width: 36px; height: 36px; flex: none; cursor: pointer; color: var(--ink); }
+.bb-group { margin-top: 20px; }
+.bb-group h4 { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.bb-field { display: block; margin-top: 14px; }
+.bb-field span { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.bb-field select, .bb-field input { width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--ink); }
+.bb-field select:focus-visible, .bb-field input:focus-visible { outline: 2px solid var(--red); outline-offset: 1px; }
+.bb-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.bb-row small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+.bb-step { display: flex; align-items: center; gap: 12px; flex: none; }
+.bb-step button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: #fff; font-size: 18px; line-height: 1; cursor: pointer; color: var(--ink); }
+.bb-step button:hover { border-color: var(--red); color: var(--red); }
+.bb-step output { min-width: 18px; text-align: center; font-weight: 600; }
+.bb-pay { border: 0; padding: 0; margin: 20px 0 0; }
+.bb-pay legend { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.bb-pay label { display: flex; gap: 10px; align-items: center; padding: 10px 0; font-size: 14px; cursor: pointer; }
+.bb-summary { margin-top: 22px; padding: 18px; border-radius: var(--r); background: var(--cream); }
+.bb-lines { list-style: none; margin: 0 0 10px; padding: 0; font-size: 13px; }
+.bb-lines li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; }
+.bb-total { display: flex; justify-content: space-between; font-size: 14px; padding-top: 8px; border-top: 1px solid var(--line); }
+.bb-total.due { font-size: 18px; font-weight: 600; }
+.bb-hint { font-size: 12px; color: var(--muted); margin-top: 8px; }
+.bb-hint.center { text-align: center; }
+.bb-error { min-height: 20px; margin-top: 12px; font-size: 13px; color: #a23440; }
+.bb-pay-btn { width: 100%; justify-content: center; }
+.bb-pay-btn[disabled] { opacity: .5; cursor: not-allowed; }
+@media (max-width: 560px) { .bb-form { padding: 22px 18px 20px; } }
