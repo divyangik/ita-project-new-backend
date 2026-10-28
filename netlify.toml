@@ -22,3 +22,8 @@
   from = "/products/boquete-panama-real-estate-lifestyle-discovery-1"
   to = "/trips/boquete-panama-real-estate-lifestyle-discovery"
   status = 301
+
+[[redirects]]
+  from = "/products/japan-a-journey-through-cultural-depth-timeless-elegance-1"
+  to = "/trips/japan-a-journey-through-cultural-depth-timeless-elegance"
+  status = 301

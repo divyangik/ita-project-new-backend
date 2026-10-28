@@ -208,11 +208,14 @@ if (mapc && window.ITA_LAND) {
 }
 
 /* ---------- trips ---------- */
-const tripPages = { 'boquete-panama-real-estate-lifestyle-discovery-1': '/trips/boquete-panama-real-estate-lifestyle-discovery' };
+const tripPages = {
+  'boquete-panama-real-estate-lifestyle-discovery-1': '/trips/boquete-panama-real-estate-lifestyle-discovery',
+  'japan-a-journey-through-cultural-depth-timeless-elegance-1': '/trips/japan-a-journey-through-cultural-depth-timeless-elegance'
+};
 const tripLink = t => tripPages[t.id] ? `href="${tripPages[t.id]}"` : `href="${t.url}" target="_blank" rel="noopener"`;
 const tripCard = t => `
   <a class="trip rv" ${tripLink(t)}>
-    <div class="ph"><img src="/.netlify/images?url=/${encodeURIComponent(t.img)}&w=800&q=82" alt="${t.title.replace(/"/g, '')}" loading="lazy" width="800" height="1000"><span class="badge">${t.region}</span></div>
+    <div class="ph"><img src="/${t.img}" alt="${t.title.replace(/"/g, '')}" loading="lazy" width="800" height="1000"><span class="badge">${t.region}</span></div>
     <div class="body"><small class="trip-category">${t.cat}</small>
       <h4>${t.title}</h4>
       <div class="meta"><span class="price">${t.cat === 'Day Experience' ? '' : 'from '}<b>${fmt(t.price)}</b>${t.price > 400 ? ' pp' : ''}</span><span class="ar" aria-hidden="true">↗</span></div>
